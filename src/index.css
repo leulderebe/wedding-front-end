@@ -1,0 +1,74 @@
+@import "tailwindcss";
+/* @import url('https://fonts.googleapis.com/css2?family=Playwright+US+Trad&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap'); */
+
+/* @layer base {
+  body {
+    font-family: 'Montserrat', sans-serif;
+    @apply text-wedding-dark bg-wedding-light;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cormorant Garamond', serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-wedding-purple text-white py-2 px-6 rounded-md hover:bg-opacity-90 transition duration-300 font-medium;
+    font-family: 'Montserrat', sans-serif;
+  }
+}
+
+@font-face {
+  font-family: "Playwright US Trad";
+  src: url("/fonts/PlaywrightUSTrad.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+ */
+
+/* Elegant Shimmer effect classes */
+.shimmer-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.shimmer-container img {
+  transition: transform 0.7s ease-out, filter 0.5s ease;
+}
+
+.shimmer-container:hover img {
+  filter: brightness(1.05);
+}
+
+.shimmer-effect::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 120%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.25) 20%,
+    rgba(255, 255, 255, 0.5) 50%,
+    rgba(255, 255, 255, 0.25) 80%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  z-index: 20;
+  pointer-events: none;
+}
+
+.shimmer-container:hover .shimmer-effect::before {
+  animation: shimmer 1.8s infinite ease-in-out;
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-30%) skewX(-15deg);
+  }
+  100% {
+    transform: translateX(130%) skewX(-15deg);
+  }
+}
