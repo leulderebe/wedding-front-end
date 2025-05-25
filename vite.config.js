@@ -16,6 +16,7 @@ export default defineConfig({
     allowedHosts: [
       "weddingplanning-1-joi4.onrender.com", // Added your specific Render host
       "weddingplanning-3.onrender.com",
+      "wedding-front-end-x3cf.onrender.com", // Added new Render host
       "localhost", // For local development
     ],
   },
@@ -26,6 +27,7 @@ export default defineConfig({
     allowedHosts: [
       "weddingplanning-1-joi4.onrender.com", // Added your specific Render host
       "weddingplanning-3.onrender.com",
+      "wedding-front-end-x3cf.onrender.com", // Added new Render host
       "localhost", // For local development
     ],
   },
