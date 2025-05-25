@@ -113,12 +113,12 @@ export const adminResources = [
     edit: userEdit,
     create: userCreate,
   },
-  {
-    name: "feedback",
-    label: "Feedback",
-    icon: feedback,
-    list: feedbackList,
-  },
+  // {
+  //   name: "feedback",
+  //   label: "Feedback",
+  //   icon: feedback,
+  //   list: feedbackList,
+  // },
   {
     name: "payment",
     label: "Payments",
@@ -153,12 +153,12 @@ export const eventPlannerResources = [
     icon: user,
     list: userListOne,
   },
-  {
-    name: "feedback",
-    label: "Feedback",
-    icon: feedback,
-    list: feedbackListOne,
-  },
+  // {
+  //   name: "feedback",
+  //   label: "Feedback",
+  //   icon: feedback,
+  //   list: feedbackListOne,
+  // },
   {
     name: "payment",
     label: "Payments",

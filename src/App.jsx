@@ -15,6 +15,7 @@ import Vendor from "./pages/vendor";
 import VendorsByCategory from "./pages/vendorsByCategory";
 import Page404 from "./pages/404Page";
 import PaymentConfirmation from "./components/service/PaymentConfirmation";
+import TermsAndConditions from "./pages/TermsAndConditions";
 
 const ProtectedRoute = ({ children, allowedRoles }) => {
   const userType = localStorage.getItem("user_type") || "";
@@ -47,6 +48,7 @@ function App() {
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/sign-up" element={<SignUp />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
           <Route
             path="/register-vendor"
             element={<Navigate to="/sign-up" replace />}

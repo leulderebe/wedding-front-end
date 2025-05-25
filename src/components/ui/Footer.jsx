@@ -1,13 +1,13 @@
 
 import React from "react";
-import { 
-  FaTelegramPlane, 
-  FaInstagram, 
-  FaPhone, 
-  FaEnvelope, 
-  FaMapMarkerAlt, 
-  FaPaperPlane, 
-  FaHeart 
+import {
+  FaTelegramPlane,
+  FaInstagram,
+  FaPhone,
+  FaEnvelope,
+  FaMapMarkerAlt,
+  FaPaperPlane,
+  FaHeart
 } from "react-icons/fa";
 import { SiTiktok } from "react-icons/si";
 
@@ -17,7 +17,7 @@ const Footer = () => {
       {/* Animated Sparkles Overlay */}
 
       <div className="absolute bottom-0 right-0 w-full h-12 bg-gradient-to-l from-purple-300/10 via-purple-400/20 to-purple-300/10 animate-pulse"></div>
-      
+
       {/* Enhanced Ethiopian Pattern Background with Animation */}
       <div className="absolute inset-0 opacity-[0.05] pointer-events-none">
         <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
@@ -38,7 +38,7 @@ const Footer = () => {
           <rect width="100%" height="100%" fill="url(#ethiopianPattern)" />
         </svg>
       </div>
-      
+
       {/* Decorative Shiny Corner Elements */}
       <div className="absolute top-0 left-0 w-24 h-24 bg-gradient-to-br from-purple-200/40 to-transparent rounded-br-full"></div>
       <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-purple-200/40 to-transparent rounded-bl-full"></div>
@@ -64,22 +64,22 @@ const Footer = () => {
                 <div className="h-0.5 w-20 bg-gradient-to-r from-wedding-purple to-transparent"></div>
               </div>
             </div>
-            
+
             <p className="text-gray-600 text-sm max-w-xs mt-2 leading-relaxed">
-              Creating unforgettable Ethiopian wedding experiences that honor tradition with modern elegance. 
+              Creating unforgettable Ethiopian wedding experiences that honor tradition with modern elegance.
               Your dream wedding celebration is our passion.
             </p>
 
             {/* Enhanced Newsletter Subscription with Animation and Shimmer Effect */}
             <div className="mt-6 w-full max-w-xs">
-              
-              
+
+
               {/* Small sparkle effect under the form */}
               <div className="mt-2 flex justify-center">
                 <div className="h-0.5 w-12 bg-gradient-to-r from-transparent via-wedding-purple/40 to-transparent animate-pulse"></div>
               </div>
             </div>
-            
+
             {/* Add some CSS to the component to support the animations */}
             <style jsx>{`
               @keyframes shimmer {
@@ -93,9 +93,9 @@ const Footer = () => {
 
             {/* Enhanced Social Icons with Animations and Glowing Effects */}
             <div className="flex space-x-6 mt-6">
-              <a 
-                href="#" 
-                className="relative group" 
+              <a
+                href="#"
+                className="relative group"
                 aria-label="Telegram"
               >
                 <div className="absolute -inset-1 bg-gradient-to-r from-blue-400 to-blue-600 rounded-full blur opacity-60 group-hover:opacity-100 transition duration-300 group-hover:duration-200 animate-tilt"></div>
@@ -104,9 +104,9 @@ const Footer = () => {
                   <FaTelegramPlane size={18} className="transform transition-transform group-hover:scale-110  " />
                 </div>
               </a>
-              <a 
-                href="#" 
-                className="relative group" 
+              <a
+                href="#"
+                className="relative group"
                 aria-label="Instagram"
               >
                 <div className="absolute -inset-1 bg-gradient-to-r from-pink-600 to-purple-600 rounded-full blur opacity-60 group-hover:opacity-100 transition duration-300 group-hover:duration-200 animate-tilt"></div>
@@ -115,9 +115,9 @@ const Footer = () => {
                   <FaInstagram size={18} className="transform transition-transform group-hover:scale-110" />
                 </div>
               </a>
-              <a 
-                href="#" 
-                className="relative group" 
+              <a
+                href="#"
+                className="relative group"
                 aria-label="tiktok"
               >
                 <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full blur opacity-60 group-hover:opacity-100 transition duration-300 group-hover:duration-200 animate-tilt"></div>
@@ -127,7 +127,7 @@ const Footer = () => {
                 </div>
               </a>
             </div>
-            
+
             {/* Add some CSS to the component to support the animations */}
             <style jsx>{`
               @keyframes tilt {
@@ -149,17 +149,17 @@ const Footer = () => {
                 <ul className="space-y-2">
                   <li><a href="/" className="text-sm hover:text-wedding-purple transition-colors border-b border-transparent hover:border-wedding-purple/30 pb-0.5 inline-block">Home</a></li>
                   <li><a href="/about-us" className="text-sm hover:text-wedding-purple transition-colors border-b border-transparent hover:border-wedding-purple/30 pb-0.5 inline-block">About Us</a></li>
-                  <li><a href="/services" className="text-sm hover:text-wedding-purple transition-colors border-b border-transparent hover:border-wedding-purple/30 pb-0.5 inline-block">Services</a></li>
+                  <li><a href="#services" className="text-sm hover:text-wedding-purple transition-colors border-b border-transparent hover:border-wedding-purple/30 pb-0.5 inline-block">Services</a></li>
                   <li><a href="/Testimonal" className="text-sm hover:text-wedding-purple transition-colors border-b border-transparent hover:border-wedding-purple/30 pb-0.5 inline-block">Testimonials</a></li>
                 </ul>
               </div>
               <div>
                 <h6 className="text-sm font-semibold mb-2 text-wedding-dark/80">Services</h6>
                 <ul className="space-y-2">
-                  <li><a href="/services/planning" className="text-sm hover:text-wedding-purple transition-colors border-b border-transparent hover:border-wedding-purple/30 pb-0.5 inline-block">Planning</a></li>
-                  <li><a href="/services/decor" className="text-sm hover:text-wedding-purple transition-colors border-b border-transparent hover:border-wedding-purple/30 pb-0.5 inline-block">Decoration</a></li>
-                  <li><a href="/services/catering" className="text-sm hover:text-wedding-purple transition-colors border-b border-transparent hover:border-wedding-purple/30 pb-0.5 inline-block">Catering</a></li>
-                  <li><a href="/contact" className="text-sm hover:text-wedding-purple transition-colors border-b border-transparent hover:border-wedding-purple/30 pb-0.5 inline-block">Contact</a></li>
+                  <li><a href="/vendors/category/Catering" className="text-sm hover:text-wedding-purple transition-colors border-b border-transparent hover:border-wedding-purple/30 pb-0.5 inline-block">catering</a></li>
+                  <li><a href="/vendors/category/Decore%20and%20design" className="text-sm hover:text-wedding-purple transition-colors border-b border-transparent hover:border-wedding-purple/30 pb-0.5 inline-block">Decore and Design</a></li>
+                  <li><a href="/vendors/category/photography%20and%20videography" className="text-sm hover:text-wedding-purple transition-colors border-b border-transparent hover:border-wedding-purple/30 pb-0.5 inline-block">photography</a></li>
+                  <li><a href="/vendors/category/Cake" className="text-sm hover:text-wedding-purple transition-colors border-b border-transparent hover:border-wedding-purple/30 pb-0.5 inline-block">cake</a></li>
                 </ul>
               </div>
             </div>
@@ -170,61 +170,81 @@ const Footer = () => {
             <h5 className="font-playwright text-xl mb-5 text-center md:text-left text-wedding-dark after:content-[''] after:block after:w-12 after:h-0.5 after:bg-wedding-purple/70 after:mt-1.5 md:after:mx-0 after:mx-auto">Contact Us</h5>
             <ul className="space-y-5 text-gray-600 mb-5">
               <li className="flex items-center justify-center md:justify-start space-x-3 group">
-                <div className="relative">
-                  <div className="absolute -inset-1 bg-gradient-to-r from-purple-400 to-wedding-purple rounded-full blur opacity-30 group-hover:opacity-70 transition duration-300 group-hover:scale-110"></div>
-                  <div className="relative bg-gradient-to-br from-wedding-purple/15 to-wedding-purple/25 p-3 rounded-full shadow-md group-hover:shadow-wedding-purple/30 transform group-hover:scale-105 transition-all duration-300">
-                    <FaPhone className="text-wedding-purple group-hover:text-purple-700 transition-colors" size={16} /> 
+                <a
+                  href="tel:+251949590419"
+                  className="flex items-center space-x-3 cursor-pointer"
+                  aria-label="Call us at +251 949590419"
+                >
+                  <div className="relative">
+                    <div className="absolute -inset-1 bg-gradient-to-r from-purple-400 to-wedding-purple rounded-full blur opacity-30 group-hover:opacity-70 transition duration-300 group-hover:scale-110"></div>
+                    <div className="relative bg-gradient-to-br from-wedding-purple/15 to-wedding-purple/25 p-3 rounded-full shadow-md group-hover:shadow-wedding-purple/30 transform group-hover:scale-105 transition-all duration-300">
+                      <FaPhone className="text-wedding-purple group-hover:text-purple-700 transition-colors" size={16} />
+                    </div>
                   </div>
-                </div>
-                <div className="relative overflow-hidden group-hover:-translate-y-0.5 transform transition-all duration-300">
-                  <span className="text-sm font-medium text-gray-700 group-hover:text-wedding-purple transition-colors">+251 91 234 5678</span>
-                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-wedding-purple/50 group-hover:w-full transition-all duration-300 ease-out"></span>
-                </div>
+                  <div className="relative overflow-hidden group-hover:-translate-y-0.5 transform transition-all duration-300">
+                    <span className="text-sm font-medium text-gray-700 group-hover:text-wedding-purple transition-colors">+251 949590419</span>
+                    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-wedding-purple/50 group-hover:w-full transition-all duration-300 ease-out"></span>
+                  </div>
+                </a>
               </li>
               <li className="flex items-center justify-center md:justify-start space-x-3 group">
-                <div className="relative">
-                  <div className="absolute -inset-1 bg-gradient-to-r from-purple-400 to-wedding-purple rounded-full blur opacity-30 group-hover:opacity-70 transition duration-300 group-hover:scale-110"></div>
-                  <div className="relative bg-gradient-to-br from-wedding-purple/15 to-wedding-purple/25 p-3 rounded-full shadow-md group-hover:shadow-wedding-purple/30 transform group-hover:scale-105 transition-all duration-300">
-                    <FaEnvelope className="text-wedding-purple group-hover:text-purple-700 transition-colors" size={16} /> 
+                <a
+                  href="mailto:wondmuabyalew@gmail.com"
+                  className="flex items-center space-x-3 cursor-pointer"
+                  aria-label="Send email to wondmuabyalew@gmail.com"
+                >
+                  <div className="relative">
+                    <div className="absolute -inset-1 bg-gradient-to-r from-purple-400 to-wedding-purple rounded-full blur opacity-30 group-hover:opacity-70 transition duration-300 group-hover:scale-110"></div>
+                    <div className="relative bg-gradient-to-br from-wedding-purple/15 to-wedding-purple/25 p-3 rounded-full shadow-md group-hover:shadow-wedding-purple/30 transform group-hover:scale-105 transition-all duration-300">
+                      <FaEnvelope className="text-wedding-purple group-hover:text-purple-700 transition-colors" size={16} />
+                    </div>
                   </div>
-                </div>
-                <div className="relative overflow-hidden group-hover:-translate-y-0.5 transform transition-all duration-300">
-                  <span className="text-sm font-medium text-gray-700 group-hover:text-wedding-purple transition-colors">contact@fenetdecor.com</span>
-                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-wedding-purple/50 group-hover:w-full transition-all duration-300 ease-out"></span>
-                </div>
+                  <div className="relative overflow-hidden group-hover:-translate-y-0.5 transform transition-all duration-300">
+                    <span className="text-sm font-medium text-gray-700 group-hover:text-wedding-purple transition-colors">wondmuabyalew@gmail.com</span>
+                    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-wedding-purple/50 group-hover:w-full transition-all duration-300 ease-out"></span>
+                  </div>
+                </a>
               </li>
               <li className="flex items-center justify-center md:justify-start space-x-3 group">
-                <div className="relative">
-                  <div className="absolute -inset-1 bg-gradient-to-r from-purple-400 to-wedding-purple rounded-full blur opacity-30 group-hover:opacity-70 transition duration-300 group-hover:scale-110"></div>
-                  <div className="relative bg-gradient-to-br from-wedding-purple/15 to-wedding-purple/25 p-3 rounded-full shadow-md group-hover:shadow-wedding-purple/30 transform group-hover:scale-105 transition-all duration-300">
-                    <FaMapMarkerAlt className="text-wedding-purple group-hover:text-purple-700 transition-colors" size={16} /> 
+                <a
+                  href="https://www.google.com/maps/search/Shashemene,+Ethiopia"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center space-x-3 cursor-pointer"
+                  aria-label="View location on Google Maps: Shashemene, Ethiopia"
+                >
+                  <div className="relative">
+                    <div className="absolute -inset-1 bg-gradient-to-r from-purple-400 to-wedding-purple rounded-full blur opacity-30 group-hover:opacity-70 transition duration-300 group-hover:scale-110"></div>
+                    <div className="relative bg-gradient-to-br from-wedding-purple/15 to-wedding-purple/25 p-3 rounded-full shadow-md group-hover:shadow-wedding-purple/30 transform group-hover:scale-105 transition-all duration-300">
+                      <FaMapMarkerAlt className="text-wedding-purple group-hover:text-purple-700 transition-colors" size={16} />
+                    </div>
                   </div>
-                </div>
-                <div className="relative overflow-hidden group-hover:-translate-y-0.5 transform transition-all duration-300">
-                  <span className="text-sm font-medium text-gray-700 group-hover:text-wedding-purple transition-colors">Addis Ababa,Ethiopia</span>
-                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-wedding-purple/50 group-hover:w-full transition-all duration-300 ease-out"></span>
-                </div>
+                  <div className="relative overflow-hidden group-hover:-translate-y-0.5 transform transition-all duration-300">
+                    <span className="text-sm font-medium text-gray-700 group-hover:text-wedding-purple transition-colors">Shashemene, Ethiopia</span>
+                    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-wedding-purple/50 group-hover:w-full transition-all duration-300 ease-out"></span>
+                  </div>
+                </a>
               </li>
             </ul>
-            
+
             {/* Enhanced Mini Map Preview with Decorative Elements */}
             <div className="mt-4 relative group">
               {/* Shimmering Border Effect */}
               <div className="absolute -inset-1 bg-gradient-to-r from-wedding-purple/30 via-purple-400/50 to-wedding-purple/30 rounded-xl blur opacity-70 group-hover:opacity-100 transition duration-300 animate-gradient-x"></div>
-              
+
               <div className="relative w-full h-40 rounded-lg shadow-lg overflow-hidden border-2 border-wedding-purple/30 group-hover:border-wedding-purple/60 transition-all duration-300">
                 {/* Decorative Corner Elements */}
                 <div className="absolute top-0 left-0 w-10 h-10 border-t-2 border-l-2 border-wedding-purple/60 z-10"></div>
                 <div className="absolute top-0 right-0 w-10 h-10 border-t-2 border-r-2 border-wedding-purple/60 z-10"></div>
                 <div className="absolute bottom-0 left-0 w-10 h-10 border-b-2 border-l-2 border-wedding-purple/60 z-10"></div>
                 <div className="absolute bottom-0 right-0 w-10 h-10 border-b-2 border-r-2 border-wedding-purple/60 z-10"></div>
-                
+
                 {/* Location Pin Animation */}
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 z-10 pointer-events-none">
                   <div className="absolute w-6 h-6 bg-wedding-purple/80 rounded-full transform scale-0 animate-ping-slow"></div>
                 </div>
-                
-                <iframe 
+
+                <iframe
   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.982215080908!2d38.5906786!3d7.2005644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x17b1455f3d98a4e9%3A0x1e3f1a3e4e4e4e4e!2sShashemene%2C%20Ethiopia!5e0!3m2!1sen!2sus!4v1651234567890!5m2!1sen!2sus"
   width="100%"
   height="100%"
@@ -237,7 +257,7 @@ const Footer = () => {
 ></iframe>
               </div>
             </div>
-            
+
             {/* Add animation styles */}
             <style jsx>{`
               @keyframes ping-slow {

@@ -35,7 +35,7 @@ const useVendorsByCategory = () => {
                 vendor.services && vendor.services.length > 0
                   ? `Starting at ETB ${vendor.services[0].price.toLocaleString()}`
                   : "Contact for pricing",
-              location: "Addis Ababa, Ethiopia", // Default location
+              location: "shashemene, Ethiopia", // Default location
               services: vendor.services || [],
               serviceCount: vendor.serviceCount || 0,
               email: vendor.email,

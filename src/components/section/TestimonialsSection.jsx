@@ -8,29 +8,29 @@ const TestimonialSection = ({num=2}) => {
   const allTestimonials = [
     {
       id: 1,
-      name: "Abeech",
+      name: "moke and sebli",
       rating: 5,
-      image: imagePath,
+      image: "/image/cake/testimonial -1.jpg",
       imageAlt: "Wedding Rings",
-      comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec laoreet elit. Suspendisse ac...",
+      comment: "FENET transformed our dreams into a breathtaking reality. Their impeccable attention to detail and warm professionalism made our wedding day flawless. Every moment felt magical—thank you for making us feel like royalty!",
       borderColor: "border-purple-400"
     },
     {
       id: 2,
-      name: "Chaitu",
+      name: "abel and nardi",
       rating: 5,
-      image: imagePath,
+      image:"/image/cake/testimonial -2.jpg",
       imageAlt: "Groom and Friends",
-      comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas...",
+      comment: "From the first meeting, FENET felt like family. They listened to every wish, calmed every fear, and delivered a day more beautiful than we could’ve imagined. Our hearts are full!",
       borderColor: "border-purple-400"
     },
     {
       id: 3,
-      name: "Chaitu",
+      name: "mekdi and nahom",
       rating: 5,
-      image: imagePath,
+      image: "/image/cake/testimonial -3.jpg",
       imageAlt: "Groom and Friends",
-      comment: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas...",
+      comment: "Stress-free, stunning, and seamless! FENET nailed every detail. Best decision we made!",
       borderColor: "border-purple-400"
     },
   ];

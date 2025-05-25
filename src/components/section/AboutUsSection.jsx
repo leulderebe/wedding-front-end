@@ -31,7 +31,7 @@ const AboutUsSection = () => {
           <div className="relative">
             <div className="absolute -top-4 -left-4 w-full h-full border-2 border-purple-300 rounded-lg"></div>
             <img 
-              src="/image/venue/5f1889814db54c54ce84efff_weddings.jpg" 
+              src="/image/about-3.jpg" 
               alt="Fenet Decor Team" 
               className="w-full h-[400px] object-cover rounded-lg shadow-xl"
             />
@@ -105,7 +105,7 @@ const AboutUsSection = () => {
           <div className="relative">
             <div className="absolute -top-4 -left-4 w-full h-full border-2 border-purple-300 rounded-lg"></div>
             <img 
-              src="/image/venue/5f1889814db54c54ce84efff_weddings.jpg" 
+              src="/image/venue/aboutus.jpg" 
               alt="Fenet Decor Facility" 
               className="w-full h-[400px] object-cover rounded-lg shadow-xl"
             />
@@ -118,7 +118,7 @@ const AboutUsSection = () => {
             Our Facility
           </h3>
           <p className="text-gray-600 mb-4">
-            Our state-of-the-art facility in Addis Ababa houses our design studio, consultation spaces, and a vast inventory of decor items. This allows us to provide comprehensive services under one roof, from initial planning to day-of execution.
+            Our state-of-the-art facility in Shashemene houses our design studio, consultation spaces, and a vast inventory of decor items. This allows us to provide comprehensive services under one roof—from initial planning to flawless day-of execution.
           </p>
           <p className="text-gray-600 mb-4">
             The design studio is where our creative team brings your vision to life, creating custom decorations, floral arrangements, and thematic elements tailored to your preferences.

@@ -26,7 +26,7 @@ const SignUp = () => {
           className="absolute inset-0 bg-cover bg-center"
           style={{
             backgroundImage:
-              'url("/image/venue/5f1889814db54c54ce84efff_weddings.jpg")',
+              'url("/image/venue/white.jpg")',
             filter: "brightness(0.7)",
           }}
         />
@@ -42,7 +42,7 @@ const SignUp = () => {
               services as a vendor.
             </p>
             <p className="mt-2 text-gray-600 font-semibold">
-              — Wedding Bliss Team
+              — fenet wedding planner team
             </p>
           </div>
         </div>

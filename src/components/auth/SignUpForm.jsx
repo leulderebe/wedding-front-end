@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import useSignUpForm from "../../hooks/useSignUpForm";
 import useServiceCategories from "../../hooks/useServiceCategories";
 import Button from "../ui/Button";
@@ -17,6 +17,35 @@ const SignUpForm = () => {
   // Fetch service categories from the backend
   const { categories, loading: categoriesLoading } = useServiceCategories();
 
+  // State for terms and conditions (only for vendors)
+  const [acceptedTerms, setAcceptedTerms] = useState(false);
+  const [termsError, setTermsError] = useState("");
+
+  // Custom submit handler that checks terms acceptance for vendors
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+
+    // Check terms acceptance only for vendors
+    if (formData.role === "VENDOR" && !acceptedTerms) {
+      setTermsError("You must accept the terms and conditions to register as a vendor");
+      return;
+    }
+
+    setTermsError("");
+    handleSubmit(e);
+  };
+
+  // Custom change handler to clear terms error when role changes
+  const handleRoleChange = (e) => {
+    handleChange(e);
+
+    // Clear terms error when switching away from vendor
+    if (e.target.value !== "VENDOR") {
+      setTermsError("");
+      setAcceptedTerms(false);
+    }
+  };
+
   return (
     <>
       {isSuccess && (
@@ -25,7 +54,7 @@ const SignUpForm = () => {
         </div>
       )}
 
-      <form onSubmit={handleSubmit} className="space-y-6">
+      <form onSubmit={handleFormSubmit} className="space-y-6">
         {/* First Name Field */}
         <div>
           <label
@@ -132,7 +161,7 @@ const SignUpForm = () => {
                     : "border-gray-300 hover:bg-gray-50"
                 }`}
               onClick={() =>
-                handleChange({ target: { name: "role", value: "CLIENT" } })
+                handleRoleChange({ target: { name: "role", value: "CLIENT" } })
               }
             >
               <span className="text-md font-medium">Client</span>
@@ -149,7 +178,7 @@ const SignUpForm = () => {
                     : "border-gray-300 hover:bg-gray-50"
                 }`}
               onClick={() =>
-                handleChange({ target: { name: "role", value: "VENDOR" } })
+                handleRoleChange({ target: { name: "role", value: "VENDOR" } })
               }
             >
               <span className="text-md font-medium">Vendor</span>
@@ -298,6 +327,39 @@ const SignUpForm = () => {
               </p>
               {errors.tinNumber && (
                 <p className="mt-1 text-sm text-red-600">{errors.tinNumber}</p>
+              )}
+            </div>
+
+            {/* Terms and Conditions for Vendors */}
+            <div className="border-t pt-6">
+              <div className="flex items-start space-x-3">
+                <input
+                  id="acceptTerms"
+                  type="checkbox"
+                  checked={acceptedTerms}
+                  onChange={(e) => {
+                    setAcceptedTerms(e.target.checked);
+                    if (e.target.checked) {
+                      setTermsError("");
+                    }
+                  }}
+                  className="mt-1 h-4 w-4 text-purple-600 focus:ring-purple-500 border-gray-300 rounded"
+                />
+                <label htmlFor="acceptTerms" className="text-sm text-gray-700">
+                  I agree to the{" "}
+                  <a
+                    href="/terms-and-conditions"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-purple-600 hover:text-purple-800 underline font-medium"
+                  >
+                    Terms and Conditions
+                  </a>{" "}
+                  including the <strong className="text-purple-600">10% annual revenue fee</strong> and all vendor requirements.
+                </label>
+              </div>
+              {termsError && (
+                <p className="mt-2 text-sm text-red-600">{termsError}</p>
               )}
             </div>
           </>

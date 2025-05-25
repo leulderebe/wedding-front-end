@@ -31,19 +31,19 @@ const AboutUs = () => {
 
   const images = [
     {
-      src: "/image/venue/5f1889814db54c54ce84efff_weddings.jpg",
+      src: "/image/venue/venue-1.jpg",
       alt: "Perfect Moments",
       description: "Creating magical celebrations that last forever",
       position: "center"
     },
     {
-      src: "/image/venue/Home-3.jpg",
+      src: "/image/venue/decore.jpg",
       alt: "Elegant Planning",
       description: "Professional coordination for your special day",
       position: "bottom"
     },
     {
-      src: "/image/venue/5d6e99737805467c8931dd71_cutlery-dining-table-fancy-2788492.jpg",
+      src: "/image/venue/ring.jpg",
       alt: "Exquisite Details",
       description: "Exceptional attention to every element of your event",
       position: "center"
@@ -124,10 +124,10 @@ const AboutUs = () => {
                 ensuring a celebration that reflects your unique love story.
               </p>
               
-              <Button
+              {/* <Button
                 text="Schedule a Consultation"
                 className="px-12 py-6 bg-gradient-to-r from-purple-600 to-pink-500 text-white rounded-xl text-xl font-medium hover:shadow-xl hover:shadow-purple-500/30 border-none transition-all duration-300"
-              />
+              /> */}
             </motion.div>
             
             {/* Features Cards */}

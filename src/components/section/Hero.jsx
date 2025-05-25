@@ -1,5 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
-import Button from "../ui/Button"; // Importing the Button component
+import { useEffect, useState, useRef } from "react";
 
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -17,40 +16,7 @@ const Hero = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const scrollToNextSection = () => {
-    const nextSection =
-      document.getElementById("services-section") ||
-      document.querySelector("section:nth-of-type(2)");
-    if (nextSection) {
-      window.scrollTo({
-        top: nextSection.offsetTop,
-        behavior: "smooth",
-      });
-    }
-  };
 
-  // Function to generate an Ethiopian/Habesha pattern SVG
-  const habeshaPatternSvg = `data:image/svg+xml;base64,${btoa(`
-    <svg width="60" height="60" xmlns="http://www.w3.org/2000/svg">
-      <!-- Habesha Pattern Base -->
-      <defs>
-        <pattern id="habeshaGrid" width="60" height="60" patternUnits="userSpaceOnUse">
-          <!-- Cross Pattern (Meskel/Tile Cross inspired) -->
-          <path d="M30,5 L35,30 L55,30 L40,45 L45,60 L30,50 L15,60 L20,45 L5,30 L25,30 Z" 
-                fill="none" stroke="white" stroke-opacity="0.08" stroke-width="1.5"/>
-          
-          <!-- Diamond Pattern -->
-          <path d="M0,30 L30,0 L60,30 L30,60 Z" 
-                fill="none" stroke="white" stroke-opacity="0.05" stroke-width="1.5"/>
-          
-          <!-- Inner Cross for detail -->
-          <path d="M30,15 L32,30 L45,30 L35,38 L38,45 L30,40 L22,45 L25,38 L15,30 L28,30 Z" 
-                fill="none" stroke="white" stroke-opacity="0.07" stroke-width="1"/> 
-        </pattern>
-      </defs>
-      <rect width="100%" height="100%" fill="url(#habeshaGrid)"/>
-    </svg>
-  `)}`;
 
   return (
     <section
@@ -140,7 +106,7 @@ const Hero = () => {
           {/* Subtitle - Using light pink theme color */}
           <p
             className={`text-xl md:text-xl lg:text-2xl text-[#ffccf9] font-light leading-relaxed mb-4
-                        transition-all duration-1000 delay-300 ease-out 
+                        transition-all duration-1000 delay-300 ease-out
                         ${
                           isVisible
                             ? "opacity-100 translate-y-0"
@@ -154,7 +120,7 @@ const Hero = () => {
 
           {/* Key Features - With Habesha-inspired borders and hover effect */}
           <div
-            className={`grid grid-cols-1 md:grid-cols-3 gap-8 mt-8 mb-10 
+            className={`grid grid-cols-1 md:grid-cols-3 gap-8 mt-8 mb-10
                           transition-all duration-1000 delay-400 ease-out
                           ${
                             isVisible
@@ -163,7 +129,7 @@ const Hero = () => {
                           }`}
           >
             <div
-              className="group flex flex-col items-center text-center p-4 hover:scale-105 transform transition-all duration-300 ease-out 
+              className="group flex flex-col items-center text-center p-4 hover:scale-105 transform transition-all duration-300 ease-out
                           border border-[#c27bff]/20 hover:border-[#c27bff]/70 rounded-lg backdrop-blur-sm bg-black/10"
             >
               <span className="text-4xl mb-3 text-white opacity-90">✨</span>
@@ -200,9 +166,9 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Button - Enhanced with Habesha-inspired accent */}
+          {/* Book Now Button - Enhanced with Habesha-inspired accent */}
           <div
-            className={`mt-10 flex justify-center transition-all duration-1000 delay-600 ease-out 
+            className={`mt-10 flex justify-center transition-all duration-1000 delay-600 ease-out
                             ${
                               isVisible
                                 ? "opacity-100 translate-y-0"
@@ -210,64 +176,59 @@ const Hero = () => {
                             }`}
           >
             <div className="relative group">
+              {/* Glowing background effect */}
               <div
-                className="absolute -inset-0.5 bg-gradient-to-r from-[#c27bff] to-[#9c4dff] opacity-70 rounded-full blur-sm
-                            group-hover:opacity-90 transition-all duration-300"
+                className="absolute -inset-1 bg-gradient-to-r from-[#c27bff] via-[#9c4dff] to-[#c27bff] opacity-70 rounded-full blur-lg
+                            group-hover:opacity-100 group-hover:blur-xl transition-all duration-500 animate-pulse"
               ></div>
-              {/* <Button
-                text="Book a Consultation"
+
+              {/* Main button */}
+              <button
                 onClick={() => {
-                  location.href = "/login";
+                  window.location.href = "#services";
                 }}
-                className="relative text-lg px-10 py-4 bg-[#c27bff] text-white font-medium rounded-full 
-                          hover:bg-[#a964e6] transform hover:scale-105 transition-all duration-300 shadow-lg"
-              /> */}
+                className=" mb-20 relative flex items-center space-x-3 px-8 py-4 bg-gradient-to-r from-[#c27bff] to-[#9c4dff]
+                          text-white font-semibold text-lg rounded-full shadow-2xl
+                          hover:from-[#a964e6] hover:to-[#8b3dd9] transform hover:scale-105
+                          transition-all duration-300 border-2 border-white/20 hover:border-white/40
+                          backdrop-blur-sm group-hover:shadow-[0_0_30px_rgba(194,123,255,0.6)]"
+                aria-label="Book your wedding consultation now"
+              >
+                {/* Shimmer effect */}
+                <div className="absolute inset-0 rounded-full bg-gradient-to-r from-transparent via-white/20 to-transparent
+                               transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+
+                {/* Button content */}
+                <div className=" relative flex items-center space-x-3">
+                  {/* Ethiopian cross icon */}
+                  <svg
+                    className="w-6 h-6 text-white group-hover:rotate-12 transition-transform duration-300"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path d="M12,2 L14,10 L22,10 L16,14 L18,22 L12,18 L6,22 L8,14 L2,10 L10,10 Z" />
+                  </svg>
+
+                  <span className="font-bold tracking-wide">Book Now</span>
+
+                  {/* Arrow icon */}
+                  <svg
+                    className="w-5 m h-5 text-white group-hover:translate-x-1 transition-transform duration-300"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M13 7l5 5m0 0l-5 5m5-5H6"
+                    />
+                  </svg>
+                </div>
+              </button>
             </div>
           </div>
-        </div>
-
-        {/* Scroll Down Button - With Habesha-inspired border */}
-        <div
-          className={`absolute left-1/2 bottom-10 transform -translate-x-1/2 
-                       transition-all duration-1000 delay-1000 ease-out
-                       ${
-                         isVisible
-                           ? "opacity-80 translate-y-0"
-                           : "opacity-0 translate-y-10"
-                       }`}
-        >
-          <button
-            onClick={scrollToNextSection}
-            className="flex flex-col items-center hidden lg:block mt-4 justify-center text-[#ffccf9] hover:text-white transition-colors duration-300"
-            aria-label="Scroll to next section"
-          >
-            {" "}
-            <div
-              className="w-10 h-10 rounded-full border-2 border-[#ffccf9] hover:border-[#c27bff] 
-                         flex items-center justify-center hover:bg-[#c27bff]/30 transition-all duration-300
-                         relative overflow-hidden"
-            >
-              {/* Subtle Habesha pattern in the button */}
-              <div
-                className="absolute inset-0 opacity-20 "
-                style={{ backgroundImage: `url(${habeshaPatternSvg})` }}
-              ></div>
-              <svg
-                className="w-6 h-6 animate-bounce relative z-10"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M19 14l-7 7m0 0l-7-7m7 7V3"
-                />
-              </svg>
-            </div>
-          </button>
         </div>
       </div>
     </section>

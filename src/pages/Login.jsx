@@ -43,7 +43,7 @@ const Login = () => {
           className="absolute inset-0 bg-cover bg-center"
           style={{
             backgroundImage:
-              'url("/image/venue/5f1889814db54c54ce84efff_weddings.jpg")',
+              'url("/image/venue/white.jpg")',
             filter: "brightness(0.7)",
           }}
         />

@@ -62,7 +62,7 @@ const ContactSection = () => {
                 </li>
                 <li className="flex items-center space-x-2">
                   <FaEnvelope className="text-wedding-purple" /> 
-                  <span>wondimuabyalew@gmail.com</span>
+                  <span>wondmuabyalew@gmail.com</span>
                 </li>
                 <li className="flex items-center space-x-2">
                   <FaMapMarkerAlt className="text-wedding-purple" /> 
