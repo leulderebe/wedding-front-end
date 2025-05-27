@@ -11,11 +11,14 @@
 //   import.meta.env.VITE_FRONTEND_URL ||
 //   "https://weddingplanning-1-joi4.onrender.com";
 
-export const API_IMAGE_URL = "https://wedding-back-end-xrch.onrender.com/public";
+export const API_IMAGE_URL =
+  "https://wedding-back-end-xrch.onrender.com/public";
 export const API_BASE_URL =
-  import.meta.env.VITE_API_BASE_URL || "https://wedding-back-end-xrch.onrender.com/api"; //leul-2.onrender.com/api
+  import.meta.env.VITE_API_BASE_URL ||
+  "https://wedding-back-end-xrch.onrender.com/api"; //leul-2.onrender.com/api
 export const API_DOMAIN =
-  import.meta.env.VITE_API_DOMAIN || "https://wedding-back-end-xrch.onrender.com/";
+  import.meta.env.VITE_API_DOMAIN ||
+  "https://wedding-back-end-xrch.onrender.com/";
 export const FRONTEND_URL =
   import.meta.env.VITE_FRONTEND_URL ||
   "https://weddingplanning-1-joi4.onrender.com";
@@ -25,5 +28,3 @@ export default {
   API_DOMAIN,
   FRONTEND_URL,
 };
-
-
