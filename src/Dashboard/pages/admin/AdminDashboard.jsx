@@ -393,7 +393,7 @@ const Dashboard = () => {
         </Grid>
 
         {/* Feedback */}
-        <Grid item xs={12} md={6}>
+        {/* <Grid item xs={12} md={6}>
           <StyledCard>
             <CardHeader
               title="Recent Feedback"
@@ -455,7 +455,7 @@ const Dashboard = () => {
               </Button>
             </Box>
           </StyledCard>
-        </Grid>
+        </Grid> */}
       </Grid>
     </Box>
   );

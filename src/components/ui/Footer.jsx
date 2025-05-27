@@ -94,7 +94,7 @@ const Footer = () => {
             {/* Enhanced Social Icons with Animations and Glowing Effects */}
             <div className="flex space-x-6 mt-6">
               <a
-                href="#"
+                href="https://t.me/fenet_D19"
                 className="relative group"
                 aria-label="Telegram"
               >
@@ -105,7 +105,7 @@ const Footer = () => {
                 </div>
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/fenet_d19?igsh=MThrcm15Zndwejd4OA==&utm_source=ig_contact_invite"
                 className="relative group"
                 aria-label="Instagram"
               >
@@ -116,7 +116,7 @@ const Footer = () => {
                 </div>
               </a>
               <a
-                href="#"
+                href="https://www.tiktok.com/@fenetdecor?_t=ZM-8wgahTfzwgg&_r=1"
                 className="relative group"
                 aria-label="tiktok"
               >

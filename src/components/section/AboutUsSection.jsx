@@ -44,13 +44,14 @@ const AboutUsSection = () => {
             About Fenet
           </h3>
           <p className="text-gray-600 mb-4">
-            Founded in 2018, Fenet Decor has quickly established itself as one of the premier wedding planning and decoration services in Ethiopia. Our journey began with a simple passion for creating beautiful, memorable experiences for couples on their special day.
+            Fenet Decor is a trusted name in the event decoration and wedding planning industry, proudly serving clients since 2008. Founded by three friends, Fenet Decor has evolved from organizing small celebrations to specializing in large-scale wedding planning and custom event design. 
           </p>
           <p className="text-gray-600 mb-4">
-            Led by our founder, Fenet Alemu, our team combines creativity, attention to detail, and cultural understanding to create wedding experiences that honor traditions while embracing modern aesthetics.
+            With a strong reputation for quality, attention to detail, and customer satisfaction, we now offer full-service wedding planning and event organization tailored to your vision.
           </p>
           <p className="text-gray-600">
-            We believe that every love story is unique, and we're dedicated to bringing your vision to life with personalized service and exceptional execution.
+            Our journey is fueled by aspiration—reflected in the very meaning of our name, "Fenet"
+ our mission is to transform your special day into an unforgettable celebration.
           </p>
         </div>
       </motion.div>
@@ -68,7 +69,7 @@ const AboutUsSection = () => {
           <div className="relative">
             <div className="absolute -top-4 -right-4 w-full h-full border-2 border-purple-300 rounded-lg"></div>
             <img 
-              src="/image/venue/5f1889814db54c54ce84efff_weddings.jpg" 
+              src="/image/decor/platinium.jpg" 
               alt="Wedding Philosophy" 
               className="w-full h-[400px] object-cover rounded-lg shadow-xl"
             />
@@ -81,10 +82,10 @@ const AboutUsSection = () => {
             Our Philosophy
           </h3>
           <p className="text-gray-600 mb-4">
-            At Fenet Decor, we believe that your wedding day should be a perfect reflection of your love story. Our philosophy centers around three core principles: personalization, excellence, and cultural respect.
+            At Fenet Decor, we believe that every celebration is a story waiting to be told—a reflection of love, joy, and meaningful connection. Our philosophy is rooted in the idea that events should not only be beautiful but also deeply personal and thoughtfully curated.
           </p>
           <p className="text-gray-600 mb-4">
-            We take the time to understand your vision, preferences, and cultural background to create a celebration that feels authentically yours. No two weddings we design are ever the same because no two love stories are identical.
+            we strive to transform moments into memories by blending artistry with precision. For us, it’s not just about planning an event—it’s about crafting an experience that lingers in the hearts of all who attend.
           </p>
           <p className="text-gray-600">
             Our commitment to excellence means that we pay attention to every detail, from the grandest decorations to the smallest accents, ensuring a cohesive and beautiful experience for you and your guests.
@@ -118,13 +119,11 @@ const AboutUsSection = () => {
             Our Facility
           </h3>
           <p className="text-gray-600 mb-4">
-            Our state-of-the-art facility in Shashemene houses our design studio, consultation spaces, and a vast inventory of decor items. This allows us to provide comprehensive services under one roof—from initial planning to flawless day-of execution.
+we provide end-to-end wedding planning and event organization services designed to bring your vision to life with elegance and ease. From creative event design and customized decorations to professional vendor coordination and on-site management,
+ our facilities are tailored to ensure a seamless and unforgettable experience.
           </p>
           <p className="text-gray-600 mb-4">
-            The design studio is where our creative team brings your vision to life, creating custom decorations, floral arrangements, and thematic elements tailored to your preferences.
-          </p>
-          <p className="text-gray-600">
-            Our consultation spaces provide a comfortable environment for clients to explore options, view samples, and work closely with our planners to craft the perfect wedding experience.
+            Whether you're planning an intimate ceremony or a grand celebration, we offer expert guidance, budget-friendly packages, and a dedicated team committed to perfection—so you can relax and enjoy every moment of your special day.
           </p>
         </div>
       </motion.div>

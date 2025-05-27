@@ -125,7 +125,7 @@ const AdminPanel = () => {
     }
 
     // For non-vendor users, return normal resources
-    return resources.map((resource, index) => (
+    return resources?.map((resource, index) => (
       <Resource
         key={index}
         name={resource.name}
